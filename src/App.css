@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.weather-wrapper {
+  height: 100vh;
+  background-image: linear-gradient(#2a2a72, #009ffd);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.weather-city {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.weather-location {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.weather-wearch-menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.weather-date {
+  font-size: 25px;
+}
+
+.weather-input {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.575);
+  margin-left: 30px;
+}
+
+.weather-search {
+  height: 40px;
+  width: 80px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .weather-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .weather-location {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .weather-date {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+
+  .weather-wearch-menu {
+    display: flex;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .weather-input {
+    width: 600px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 40px;
+  }
+
+  .weather-search {
+    height: 80px;
+    width: 160px;
+    margin-left: 40px;
+    border-radius: 40px;
+    font-size: 30px;
   }
 }
